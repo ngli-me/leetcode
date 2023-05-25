@@ -1,5 +1,4 @@
 class Solution:
-
     def lengthOfLongestSubstring(self, s: str) -> int:
         chars = {}
         left = right = 0
@@ -23,7 +22,7 @@ class Solution:
                 left +=1
 
             longest = max(longest, right - left + 1)
-            right += 1
+            right += 1 
             print(left, right, chars)
         return longest
 
